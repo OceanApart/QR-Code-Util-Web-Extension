@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+# QR Code Util
 
-You can use the [editor on GitHub](https://github.com/OceanApart/QR-Code-Fx-add-ons/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A Firefox add-on that transforms between text and QR Code totally offline using the WebExtensions API.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Browser Compatibility
 
-### Markdown
+developed on Firefox 57.0b5
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## License
 
-```markdown
-Syntax highlighted code block
+MIT License
 
-# Header 1
-## Header 2
-### Header 3
+## Thanks
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/OceanApart/QR-Code-Fx-add-ons/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [qrcodejs](https://github.com/davidshimjs/qrcodejs) by davidshimjs 
+- [jsqrcode](https://github.com/LazarSoft/jsqrcode) by LazarSoft
+- [qcode-decoder](https://github.com/cirocosta/qcode-decoder) by cirocosta
+- [QRScaner](https://github.com/laobubu/QRScaner) by laobubu
+- [JS-HTML5-QRCode-Generator](JS-HTML5-QRCode-Generator) by amanuel

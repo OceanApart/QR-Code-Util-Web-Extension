@@ -8,7 +8,7 @@
  * @see <a href="http://www.d-project.com/" target="_blank">http://www.d-project.com/</a>
  * @see <a href="http://jeromeetienne.github.com/jquery-qrcode/" target="_blank">http://jeromeetienne.github.com/jquery-qrcode/</a>
  */
-var QRCode;
+var QRCodeEncoder;
 
 (function () {
 	//---------------------------------------------------------------------
@@ -231,7 +231,7 @@ var QRCode;
 		/**
 		 * Draw the QRCode
 		 * 
-		 * @param {QRCode} oQRCode
+		 * @param {QRCodeEncoder} oQRCode
 		 */
 		Drawing.prototype.draw = function (oQRCode) {
             var _htOption = this._htOption;
@@ -371,7 +371,7 @@ var QRCode;
 		/**
 		 * Draw the QRCode
 		 * 
-		 * @param {QRCode} oQRCode 
+		 * @param {QRCodeEncoder} oQRCode
 		 */
 		Drawing.prototype.draw = function (oQRCode) {
             var _elImage = this._elImage;
@@ -508,7 +508,7 @@ var QRCode;
 	}
 	
 	/**
-	 * @class QRCode
+	 * @class QRCodeEncoder
 	 * @constructor
 	 * @example 
 	 * new QRCode(document.getElementById("test"), "http://jindo.dev.naver.com/collie");
@@ -530,9 +530,9 @@ var QRCode;
 	 * @param {Number} [vOption.height=256]
 	 * @param {String} [vOption.colorDark="#000000"]
 	 * @param {String} [vOption.colorLight="#ffffff"]
-	 * @param {QRCode.CorrectLevel} [vOption.correctLevel=QRCode.CorrectLevel.H] [L|M|Q|H] 
+	 * @param {QRCodeEncoder.CorrectLevel} [vOption.correctLevel=QRCode.CorrectLevel.H] [L|M|Q|H]
 	 */
-	QRCode = function (el, vOption) {
+	QRCodeEncoder = function (el, vOption) {
 		this._htOption = {
 			width : 256, 
 			height : 256,
@@ -578,7 +578,7 @@ var QRCode;
 	 * 
 	 * @param {String} sText link data
 	 */
-	QRCode.prototype.makeCode = function (sText) {
+	QRCodeEncoder.prototype.makeCode = function (sText) {
 		this._oQRCode = new QRCodeModel(_getTypeNumber(sText, this._htOption.correctLevel), this._htOption.correctLevel);
 		this._oQRCode.addData(sText);
 		this._oQRCode.make();
@@ -594,7 +594,7 @@ var QRCode;
 	 * 
 	 * @private
 	 */
-	QRCode.prototype.makeImage = function () {
+	QRCodeEncoder.prototype.makeImage = function () {
 		if (typeof this._oDrawing.makeImage == "function" && (!this._android || this._android >= 3)) {
 			this._oDrawing.makeImage();
 		}
@@ -603,12 +603,12 @@ var QRCode;
 	/**
 	 * Clear the QRCode
 	 */
-	QRCode.prototype.clear = function () {
+	QRCodeEncoder.prototype.clear = function () {
 		this._oDrawing.clear();
 	};
 	
 	/**
-	 * @name QRCode.CorrectLevel
+	 * @name QRCodeEncoder.CorrectLevel
 	 */
-	QRCode.CorrectLevel = QRErrorCorrectLevel;
+	QRCodeEncoder.CorrectLevel = QRErrorCorrectLevel;
 })();

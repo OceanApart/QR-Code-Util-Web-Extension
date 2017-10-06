@@ -1,22 +1,39 @@
 {
 
-  "description": "Make current tab url into QR Code.",
+  "description": "A Firefox add-on that transforms between text and QR Code totally offline using the WebExtensions API.",
   "manifest_version": 2,
-  "name": "myQR Code",
+  "name": "QR Code Util",
   "version": "1.0",
+  "default_locale": "en",
   "homepage_url": "https://github.com/OceanApart",
   "icons": {
+    "32": "icons/QR-32.png",
     "48": "icons/QR-48.png"
   },
 
   "permissions": [
-    "activeTab"
+    "activeTab",
+    "contextMenus"
   ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
 
   "browser_action": {
     "default_icon": "icons/QR-32.png",
-    "default_title": "QR Code",
+    "default_title": "QR Code Util",
     "default_popup": "popup/show_qrcode.html"
+  },
+
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+R"
+      }
+    }
   }
 
 }

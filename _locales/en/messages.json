@@ -1,0 +1,8 @@
+{
+  "addOnName": {
+    "message": "QR Code Util"
+  },
+  "contextMenu": {
+    "message": "Decode QR"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "addOnName": {
+    "message": "QR Code Util"
+  },
+  "contextMenu": {
+    "message": "识别二维码"
+  }
+}

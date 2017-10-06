@@ -1,8 +1,8 @@
 {
-  "name": "QR-Code-util",
-  "title": "QR Code util WebExtensions",
-  "version": "1.0.0",
-  "description": "Firefox add-ons created using the WebExtensions API",
+  "name": "QR-Code-Util",
+  "title": "QR Code Util Firefox addon",
+  "version": "0.1.0",
+  "description": "A Firefox add-on that transforms between text and QR Code totally offline using the WebExtensions API.",
   "devDependencies": {
     "eslint": "^4.4.1"
   },
