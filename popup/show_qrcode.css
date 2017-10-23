@@ -1,9 +1,11 @@
 #qrbox {
+    /*TODO change unit*/
     width: 150px;
     height: 150px;
     margin: 10px auto;
 }
 
 #inputbox {
+    /*TODO change style*/
     margin: auto;
 }

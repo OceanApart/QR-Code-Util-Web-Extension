@@ -23,7 +23,7 @@
     "webextensions",
     "firefox"
   ],
-  "homepage": "https://oceanapart.github.io/QR-Code-Fx-add-ons/",
+  "homepage": "https://oceanapart.github.io/QR-Code-Util-Web-Extension/",
   "dependencies": {
     "babel-eslint": "^7.2.3"
   }

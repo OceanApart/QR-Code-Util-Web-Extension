@@ -1,8 +1,20 @@
 {
   "addOnName": {
-    "message": "QR Code Util"
+    "message": "二维码实用工具"
   },
-  "contextMenu": {
-    "message": "识别二维码"
+  "contextMenu-img": {
+    "message": "识别图片二维码"
+  },
+  "contextMenu-text": {
+    "message": "为选中文本生成二维码"
+  },
+  "contextMenu-link": {
+    "message": "为选中链接生成二维码"
+  },
+  "decode-error": {
+    "message": "二维码解析失败"
+  },
+  "fail-load": {
+    "message": "图片加载失败"
   }
 }

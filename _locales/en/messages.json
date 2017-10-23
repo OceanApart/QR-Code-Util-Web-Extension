@@ -2,7 +2,19 @@
   "addOnName": {
     "message": "QR Code Util"
   },
-  "contextMenu": {
-    "message": "Decode QR"
+  "contextMenu-img": {
+    "message": "Decode this image"
+  },
+  "contextMenu-text": {
+    "message": "Encode selected text"
+  },
+  "contextMenu-link": {
+    "message": "Encode selected link"
+  },
+  "decode-error": {
+    "message": "Failed to decoding QR Code."
+  },
+  "failed-load": {
+    "message": "Failed to load the image."
   }
 }
