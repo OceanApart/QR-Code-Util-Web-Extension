@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "QR Code Util",
   "version": "0.2.0",
-  "default_locale": "EN",
+  "default_locale": "zh",
   "homepage_url": "https://oceanapart.github.io/QR-Code-Util-Web-Extension/",
 
   "icons": {
