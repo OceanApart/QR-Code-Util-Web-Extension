@@ -2,7 +2,7 @@
   "description": "A Firefox add-on that transforms between text and QR Code totally offline using the WebExtensions API.",
   "manifest_version": 2,
   "name": "QR Code Util",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "default_locale": "zh",
   "homepage_url": "https://oceanapart.github.io/QR-Code-Util-Web-Extension/",
 
