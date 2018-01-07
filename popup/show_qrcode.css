@@ -1,11 +1,19 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 160px;
+    flex-wrap: wrap;
+}
+
 #qrbox {
     /*TODO change unit*/
-    width: 150px;
     height: 150px;
-    margin: 10px auto;
+    background: white;
+    padding: 8px;
 }
 
 #inputbox {
     /*TODO change style*/
-    margin: auto;
+    margin: 0 0 5px 0;
 }
