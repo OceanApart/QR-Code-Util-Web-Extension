@@ -4,7 +4,10 @@
   "version": "0.2.1",
   "description": "A Firefox add-on that transforms between text and QR Code totally offline using the WebExtensions API.",
   "devDependencies": {
-    "eslint": "^4.4.1"
+    "@types/qrcode": "^1.5.5",
+    "eslint": "^4.4.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "repository": {
     "type": "git",
@@ -12,7 +15,8 @@
   },
   "scripts": {
     "test": "eslint .",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "build": "webpack"
   },
   "license": "MIT",
   "bugs": {
@@ -25,6 +29,8 @@
   ],
   "homepage": "https://oceanapart.github.io/QR-Code-Util-Web-Extension/",
   "dependencies": {
-    "babel-eslint": "^7.2.3"
+    "babel-eslint": "^7.2.3",
+    "jsqr": "^1.4.0",
+    "qrcode": "^1.5.3"
   }
 }

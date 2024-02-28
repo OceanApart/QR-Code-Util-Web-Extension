@@ -7,8 +7,8 @@
   "homepage_url": "https://oceanapart.github.io/QR-Code-Util-Web-Extension/",
 
   "icons": {
-    "32": "icons/QR-32.png",
-    "48": "icons/QR-48.png"
+    "48": "icons/qrcode.svg",
+    "96": "icons/qrcode.svg"
   },
 
   "permissions": [
@@ -23,9 +23,18 @@
   },
 
   "browser_action": {
-    "default_icon": "icons/QR-32.png",
+    "default_icon": "icons/qrcode.svg",
     "default_title": "QR Code Util",
-    "default_popup": "popup/show_qrcode.html"
+    "default_popup": "popup/show_qrcode.html",
+    "theme_icons": [{
+      "dark": "icons/qrcode.svg",
+      "light": "icons/qrcode-light-text.svg",
+      "size": 16
+    }, {
+      "dark": "icons/qrcode.svg",
+      "light": "icons/qrcode-light-text.svg",
+      "size": 32
+    }]
   },
 
   "commands": {
