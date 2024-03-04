@@ -6,7 +6,8 @@
   "env": {
     "browser": true,
     "es6": true,
-    "webextensions": true
+    "webextensions": true,
+    "node": true
   },
   "extends": [
     "eslint:recommended"
